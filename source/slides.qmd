@@ -1,0 +1,251 @@
+---
+title: "AI Boardroom"
+subtitle: "Leveraging AI for Business Strategy"
+author: "Dr. Michael Borck"
+date: "9 December 2025"
+format: pptx
+---
+
+## $440,000
+
+::: {.notes}
+Pause for 2-3 seconds before speaking.
+
+"$440,000. That's what the Australian government paid Deloitte for a welfare review report earlier this year."
+:::
+
+## The Deloitte Case
+
+**What happened:**
+
+- Deloitte used AI (GPT-4) to draft government reports
+- Reports contained **fabricated citations** - fake studies, made-up quotes
+- Australia: $440,000 welfare review - partial refund issued
+- Canada: $1.6 million healthcare report - 4 incorrect citations found
+
+**The lesson:** AI is confident even when wrong. Verification is essential.
+
+::: {.notes}
+"Their reputation—built over decades—damaged by AI-generated misinformation they didn't verify. Today, I'm going to teach you how to use AI as a strategic thinking partner - and how to avoid becoming the next headline."
+:::
+
+## Today's Session
+
+1. **The AI Mindset** - How to think about AI
+2. **Board of Directors Strategy** - Multi-perspective analysis
+3. **Devil's Advocate** - Stress-testing ideas
+4. **Reverse Prompting** - Let AI interview you
+5. **Ethics & The Trap** - Using AI responsibly
+
+**Companion Website:** [Link in chat]
+
+## Part 1: The AI Mindset
+
+## AI is a Smart Intern Who Hallucinates
+
+**Key insight:** AI is a **reasoning engine**, not a search engine
+
+- Google finds information that exists
+- AI generates responses based on patterns
+- It doesn't "know" things - it predicts likely responses
+
+**The Intern Analogy:**
+
+> Think of AI like a brilliant intern. They're eager, fast, and can do amazing work. But they might confidently present completely made-up statistics.
+
+## The Golden Rule
+
+::: {.center}
+**AI should challenge your thinking, not replace it.**
+:::
+
+The moment you stop questioning AI's output is the moment you become Deloitte.
+
+**Your role:** Editor-in-Chief, not stenographer.
+
+## Part 2: Board of Directors Strategy
+
+## Multi-Perspective Analysis
+
+**The concept:** Get multiple expert viewpoints in one prompt
+
+- CFO perspective (financial)
+- Marketing Director (customers)
+- Operations Manager (practical)
+- Legal Counsel (compliance)
+
+**Why it works:** Catches blind spots you'd miss thinking alone
+
+## Demo: Board of Directors Prompt
+
+```
+I'm considering opening a cashless coffee shop 
+near a university campus. 
+
+Act as my board of directors and analyse this 
+idea from multiple perspectives:
+
+1. As CFO: Financial considerations, risks, ROI?
+2. As Marketing Director: Positioning and reach?
+3. As Operations Manager: Practical challenges?
+4. As Legal Counsel: Regulations to consider?
+
+For each perspective, give me 3-4 key points.
+```
+
+::: {.notes}
+Switch to browser and run this demo in Gemini.
+:::
+
+## Your Turn: Try It
+
+Think of a business idea:
+
+- A meal prep delivery service for students
+- A tutoring app connecting students with graduates  
+- A sustainable fashion rental service
+- Your own idea
+
+**Try the Board of Directors prompt with your idea.**
+
+## Part 3: Devil's Advocate
+
+## Overcoming Confirmation Bias
+
+**The problem:** We look for evidence that supports our ideas
+
+**The solution:** Force AI to argue against your position
+
+**Key phrases that work:**
+
+- "Be harsh but fair"
+- "Don't hold back"
+- "I need to hear the hard truths"
+
+## Demo: Devil's Advocate Prompt
+
+```
+I believe that a cashless coffee shop near 
+a university is a great business idea.
+
+Play devil's advocate. Give me the strongest 
+possible arguments against this idea. 
+Be harsh but fair. I want to know:
+
+1. Why might this fail?
+2. What am I probably not thinking about?
+3. Who would this NOT work for?
+4. What market conditions could kill this?
+
+Don't hold back - I need to hear the hard truths.
+```
+
+::: {.notes}
+Switch to browser and run this demo. Point out how giving AI permission to be critical produces better feedback.
+:::
+
+## Part 4: Reverse Prompting
+
+## When You Don't Know What to Ask
+
+**The problem:** Sometimes the hardest part is knowing what questions to ask
+
+**The solution:** Let AI interview YOU first
+
+**Why it works:** 
+
+- AI understands your specific context
+- Recommendations become tailored, not generic
+- You discover what you don't know
+
+## Demo: Reverse Prompting
+
+```
+I want to create a marketing plan for a new 
+cashless coffee shop near a university.
+
+Before giving me any advice, interview me first. 
+Ask me questions one at a time to understand:
+- My target customers
+- My budget and timeline
+- My competitive advantages
+- My experience in this industry
+- Any constraints I'm working with
+
+After you understand my situation, then give 
+me tailored marketing recommendations.
+
+Start with your first question.
+```
+
+::: {.notes}
+Run this demo. Answer 2-3 questions from the AI to show how the conversation builds context.
+:::
+
+## Part 5: Ethics & The Trap
+
+## The Billboard Rule
+
+**Before sharing anything with AI, ask:**
+
+> "Would I be comfortable if this appeared on a billboard?"
+
+**Never share:**
+
+- Passwords or API keys
+- Personal information about others
+- Confidential business data
+- Anything you wouldn't want made public
+
+## The Hallucination Trap
+
+Remember Deloitte? Here's why it happened:
+
+1. **AI doesn't know it's lying** - It generates plausible text
+2. **Confidence ≠ Accuracy** - AI sounds equally confident right or wrong
+3. **Pattern matching, not truth** - AI predicts likely responses
+
+## The Three Verification Questions
+
+Before trusting any AI output, ask:
+
+1. **Can I find this source independently?**
+2. **Does this statistic appear elsewhere?**
+3. **Does this make logical sense?**
+
+If you can't verify it, don't use it.
+
+## Resources & Next Steps
+
+## Key Takeaways
+
+1. AI is a thinking partner, not a replacement for thinking
+2. Use **multi-perspective prompting** (Board of Directors)
+3. **Challenge your ideas** (Devil's Advocate)
+4. Let AI **interview you** for better context (Reverse Prompting)
+5. **Always verify** - never trust blindly
+
+## Companion Website
+
+[QR CODE: Insert QR code linking to companion website]
+
+**Resources available:**
+
+- All prompts from today's session
+- Style Mirror tool (help AI write in your voice)
+- Deeper reading on AI concepts
+- Ethics guidelines
+
+## Q&A
+
+**Questions?**
+
+---
+
+Dr. Michael Borck  
+Curtin Singapore  
+December 2025
+
+::: {.notes}
+Thank you for your attention. I'm happy to take any questions.
+:::

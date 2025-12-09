@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Quarto
+.quarto/
+/_site/
+
+# Content folder - only track .qmd, .md, .txt files
+content/*
+!content/*.qmd
+!content/*.md
+!content/*.txt

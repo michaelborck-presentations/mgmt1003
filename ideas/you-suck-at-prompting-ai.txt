@@ -1,0 +1,80 @@
+Here's the distilled wisdom from the video, organized into actionable insights:
+
+### Core Philosophy
+1. **AI is a Prediction Engine, Not a Thinker**  
+   - LLMs autocomplete patterns statistically. Your prompt sets the pattern.  
+   - *Fix:* Be specific to guide the AI's "guessing" toward desired outputs.
+
+2. **Treat Prompting Failures as Skill Issues**  
+   - Bad results? The problem is unclear thinking, not the AI.  
+   - *Fix:* Reframe: "I didn't explain this well enough."
+
+---
+
+### Foundational Techniques
+1. **Personas**  
+   - Define who the AI is (e.g., "Senior SRE for Cloudflare").  
+   - *Why:* Narrows focus and injects expertise/personality.  
+   - *Pro Tip:* Use system prompts (APIs) or user prompts (chat).
+
+2. **Context is King**  
+   - Provide ALL necessary details—don’t assume the AI "knows" anything.  
+   - *Rule:* **ABC (Always Be Contexting)**.  
+   - *Anti-Hallucination Hack:*  
+     > "If the answer isn’t in the context, say 'I don’t know'."  
+     (Prevents AI from making up facts.)
+
+3. **Output Requirements**  
+   - Specify format, length, tone, and constraints upfront.  
+   - *Example:*  
+     > "Bulleted timeline under 200 words. Tone: apologetic, no corporate fluff."
+
+4. **Few-Shot Examples**  
+   - Show the AI exactly what you want (e.g., past emails).  
+   - *Why:* Demonstrates patterns better than descriptions.
+
+---
+
+### Advanced Techniques
+1. **Chain-of-Thought (CoT)**  
+   - Force step-by-step reasoning:  
+     > "Think through this step-by-step before answering."  
+   - *Pro Tip:* Use "Extended Thinking" (built into most platforms).
+
+2. **Tree-of-Thought (ToT)**  
+   - Explore multiple solutions like branches in a tree.  
+   - *Use Case:* Complex problems where the first idea isn’t best.  
+   - *Prompt Example:*  
+     > "Brainstorm 3 approaches: [Radical Transparency], [Customer Empathy], [Future Focus]. Evaluate each and synthesize."
+
+3. **Battle of the Bots (Adversarial Validation)**  
+   - Generate competing solutions and have them critique each other.  
+   - *Workflow:*  
+     1. Personas A & B create drafts.  
+     2. Persona C (e.g., "Angry Customer") critiques them.  
+     3. A & B collaborate on a final version.  
+   - *Why:* Taps into AI’s editing superpower.
+
+---
+
+### The Meta-Skill: Clarity of Thought
+- **Techniques are tools for clarity:**  
+  - *Persona* = "Who is answering?"  
+  - *Context* = "What facts matter?"  
+  - *CoT/ToT* = "How does logic flow?"  
+  - *Few-Shot* = "What does 'good' look like?"  
+- **Key Insight:**  
+  > "The AI can only be as clear as you are. If you can’t explain it to a human, the AI can’t execute it."  
+- **Action Plan:**  
+  1. **Think First, Prompt Second:** Outline your goal on paper before prompting.  
+  2. **Red-Team Your Prompts:** Attack your own prompts from multiple angles to find gaps.  
+  3. **Build a Prompt Library:** Save reusable templates (tools like Fabric help).  
+
+---
+
+### Practical Habits
+- **Never Assume:** Always re-provide context, even in ongoing chats.  
+- **Use Prompt Enhancers:** Tools that refine raw ideas into structured prompts.  
+- **Start Simple:** Master foundational techniques (personas + context) before advanced methods.  
+
+> **Final Wisdom:** "Good prompting isn’t about tricking AI—it’s about sharpening your own thinking." When frustrated, pause, clarify your goal, and rebuild the prompt. The AI reflects your clarity.

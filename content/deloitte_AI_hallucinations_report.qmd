@@ -1,0 +1,85 @@
+---
+title: "Deloitte AI Hallucinations Report" 
+subtitle: "Case Study: When AI Gets It Wrong"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-depth: 2
+---
+
+## **Executive Summary**
+
+Deloitte is currently facing significant scrutiny following two high-profile incidents involving the use of generative AI in government consultancy reports. Specifically, the use of Azure OpenAI GPT-4o resulted in fabricated references and quotes in reports for the Australian and Canadian governments.
+
+These incidents have prompted a partial refund in Australia and have sparked a global conversation regarding stricter oversight and transparency in AI use within public sector contracts.
+
+:::{.callout-warning}
+
+### **Key Issue: AI Hallucinations**
+
+The core issue identified in these reports is "hallucination"—a phenomenon where generative AI models invent plausible-sounding but entirely false information, citations, or data points.  
+:::
+
+## **Australia: The DEWR Report Incident**
+
+**Contract Value:** \~AU$440,000 (approx. $290,000 USD)
+
+**Client:** Department of Employment and Workplace Relations (DEWR)
+
+In December 2024, the Australian Department of Employment and Workplace Relations (DEWR) commissioned Deloitte to review its **Targeted Compliance Framework**, a welfare system designed to monitor and penalize jobseekers.
+
+### **The Error**
+
+The resulting report, published in July 2025, was found to contain numerous fabricated citations. Notable errors included:
+
+* Non-existent studies attributed to the **University of Sydney** and **Lund University**.  
+* A false quote attributed to a federal court judge.
+
+### **Discovery and Response**
+
+The errors were flagged by **Dr. Christopher Rudge**, an academic at Sydney University, and subsequently reported by the *Australian Financial Review*.
+
+Following this discovery:
+
+1. **Admission:** Deloitte confirmed the use of Azure OpenAI GPT-4o in the drafting process.  
+2. **Correction:** A revised version of the report was issued in September 2025\. This version included a formal disclosure of AI use and removed the fabricated references.  
+3. **Financial Consequence:** Deloitte agreed to refund the final installment of its consultancy fee. While the exact refund amount was not disclosed, the total contract value was approximately AU$440,000.  
+4. **Government Stance:** Despite the fabrication of supporting citations, the Australian government maintained that the report's substantive findings, recommendations, and core analysis remained valid.
+
+## **Canada: Newfoundland and Labrador Inquiry**
+
+**Contract Value:** $1.6 million
+
+**Client:** Government of Newfoundland and Labrador
+
+Following the Australian incident, Deloitte faced similar allegations in Canada in November 2025 regarding a $1.6 million report addressing a healthcare staffing crisis.
+
+### **The Allegations**
+
+The report allegedly contained fabricated citations used to validate claims regarding:
+
+* Recruitment strategies.  
+* The impact of the COVID-19 pandemic on healthcare workers.
+
+Upon direction from the Department of Health and Community Services to verify the accuracy of the report, Deloitte acknowledged that **four citations were incorrect**.
+
+As of December 8, 2025, unlike the Australian case, no public information has been released regarding a potential refund for the Canadian report.
+
+## **Industry Implications and Response**
+
+These incidents serve as a case study for the risks associated with integrating Large Language Models (LLMs) into professional services without adequate guardrails.
+
+### **The Risk of Hallucinations**
+
+Experts warn that hallucination rates in large language models can vary significantly, sometimes reaching as high as 45% in specific contexts. This underscores the necessity for:
+
+* **Rigorous Human Review:** A "human-in-the-loop" approach to verify all AI-generated output.  
+* **Traceability:** Clear documentation of where AI was used.  
+* **Transparency Clauses:** Stronger contractual obligations requiring firms to disclose AI usage.
+
+### **Policy Changes**
+
+The Australian government is reportedly considering the inclusion of stricter AI-usage clauses in future consultancy contracts to prevent recurrence.
+
+While Deloitte has previously faced fines for audit and ethical violations in India, China, Colombia, and Canada, those cases were unrelated to AI. These recent events mark a specific pivot in professional misconduct allegations focused on the technological integrity of deliverables.

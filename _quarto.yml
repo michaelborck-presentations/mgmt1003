@@ -1,0 +1,10 @@
+project:
+  type: default
+  output-dir: docs
+
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-depth: 2
+    theme: cosmo

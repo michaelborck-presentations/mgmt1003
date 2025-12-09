@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Boardroom - Companion Website</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2c5282;
+            --accent: #3182ce;
+            --light: #ebf8ff;
+            --text: #2d3748;
+            --text-light: #4a5568;
+            --border: #e2e8f0;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--white);
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        .hero h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .quick-link {
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s ease;
+        }
+
+        .quick-link:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .quick-link h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quick-link p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .guide-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s ease;
+        }
+
+        .guide-card:hover {
+            background: var(--light);
+            border-color: var(--accent);
+        }
+
+        .guide-card h4 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .tools-section {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .tool-feature {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .tool-feature h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--secondary);
+        }
+
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--light);
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+        }
+
+        .warning-box {
+            background: #fffbeb;
+            border: 1px solid #f59e0b;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .warning-box h4 {
+            color: #b45309;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .quick-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Boardroom</h1>
+        <p>Leveraging AI for Business Strategy - Companion Website</p>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Welcome, MGMT1003 Students</h2>
+            <p>This companion website contains all the resources from today's session on using AI as a strategic thinking partner. Bookmark this page for future reference - you'll find prompts to try, deeper reading on AI concepts, and tools to improve your AI interactions.</p>
+        </div>
+
+        <div class="quick-links">
+            <a href="handout.html" class="quick-link">
+                <h3>Student Handout</h3>
+                <p>All the prompts from today's session, ready to copy and paste into your AI tool of choice.</p>
+            </a>
+            <a href="style-mirror.html" class="quick-link">
+                <h3>Style Mirror Tool</h3>
+                <p>Interactive tool to help AI write in your voice. Great for assignments and professional communication.</p>
+            </a>
+            <a href="content/deloitte_AI_hallucinations_report.html" class="quick-link">
+                <h3>Deloitte Case Study</h3>
+                <p>Full details on the AI hallucination incidents we discussed in the opening.</p>
+            </a>
+        </div>
+
+        <div class="warning-box">
+            <h4>Remember: The Billboard Rule</h4>
+            <p>Before sharing anything with AI, ask yourself: "Would I be comfortable if this appeared on a billboard?" Never share passwords, personal data about others, or confidential information.</p>
+        </div>
+
+        <div class="section">
+            <h2>Core Guides</h2>
+            <div class="guides-grid">
+                <a href="content/what-is-ai.html" class="guide-card">
+                    <h4>What is AI?</h4>
+                    <p>Understand what AI actually is, how it works, and what it can (and can't) do.</p>
+                </a>
+                <a href="content/what-are-llms.html" class="guide-card">
+                    <h4>What are LLMs?</h4>
+                    <p>Deep dive into Large Language Models - the technology behind ChatGPT, Gemini, and Claude.</p>
+                </a>
+                <a href="content/craft-prompting-framework.html" class="guide-card">
+                    <h4>CRAFT Prompting Framework</h4>
+                    <p>A structured approach to writing effective prompts: Context, Role, Action, Format, Target.</p>
+                </a>
+                <a href="content/seven-techniques.html" class="guide-card">
+                    <h4>Seven Prompting Techniques</h4>
+                    <p>Advanced techniques including chain-of-thought, few-shot learning, and more.</p>
+                </a>
+                <a href="content/critique-toolkit.html" class="guide-card">
+                    <h4>AI Critique Toolkit</h4>
+                    <p>How to use AI to critically analyse ideas, strategies, and decisions.</p>
+                </a>
+                <a href="content/ethics-integrity.html" class="guide-card">
+                    <h4>Ethics & Integrity</h4>
+                    <p>Using AI responsibly in academic and professional contexts.</p>
+                </a>
+                <a href="content/how-to-tell-whats-real-online.html" class="guide-card">
+                    <h4>Evaluating Online Information</h4>
+                    <p>Critical skills for verifying AI outputs and online sources.</p>
+                </a>
+                <a href="content/ai-to-help-you-use-ai.html" class="guide-card">
+                    <h4>Using AI to Learn AI</h4>
+                    <p>Meta-skill: how to use AI tools to improve your AI skills.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="section tools-section">
+            <h2>Interactive Tools</h2>
+            <div class="tool-feature">
+                <h4>Style Mirror <span class="badge">Multi-Provider</span></h4>
+                <p>Help AI understand your unique writing voice by answering guided questions about your style preferences. Works with OpenAI, Gemini, Claude, and OpenRouter.</p>
+                <a href="style-mirror.html" class="btn">Open Style Mirror</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Session Prompts - Quick Reference</h2>
+            
+            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Board of Directors Strategy</h3>
+            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I'm considering [YOUR BUSINESS IDEA]. 
+Act as my board of directors and analyse this idea from multiple perspectives:
+
+1. As CFO: What are the financial considerations, risks, and potential ROI?
+2. As Marketing Director: How would you position this and reach the target market?
+3. As Operations Manager: What are the practical challenges?
+4. As Legal Counsel: What regulations or legal issues should I consider?
+
+For each perspective, give me 3-4 key points to consider.</pre>
+
+            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Devil's Advocate</h3>
+            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I believe that [YOUR IDEA/POSITION].
+
+Play devil's advocate. Give me the strongest possible arguments against this idea. 
+Be harsh but fair. I want to know:
+
+1. Why might this fail?
+2. What am I probably not thinking about?
+3. Who would this NOT work for?
+4. What market conditions could kill this?
+
+Don't hold back - I need to hear the hard truths.</pre>
+
+            <h3 style="margin-top: 1.5rem; color: var(--secondary);">Reverse Prompting</h3>
+            <pre style="background: #f7fafc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.9rem; border: 1px solid var(--border);">I want to [YOUR GOAL - e.g., create a marketing plan, write a business proposal].
+
+Before giving me any advice, interview me first. Ask me questions one at a time 
+to understand my specific situation, constraints, and goals.
+
+After you understand my situation, then give me tailored recommendations.
+
+Start with your first question.</pre>
+        </div>
+
+        <div class="section">
+            <h2>Recommended AI Tools</h2>
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <h4>Google Gemini (Free)</h4>
+                    <p>Great free tier for students. Access at <a href="https://gemini.google.com" target="_blank">gemini.google.com</a></p>
+                </div>
+                <div class="guide-card">
+                    <h4>ChatGPT (Free/Paid)</h4>
+                    <p>OpenAI's popular assistant. Access at <a href="https://chat.openai.com" target="_blank">chat.openai.com</a></p>
+                </div>
+                <div class="guide-card">
+                    <h4>Claude (Free/Paid)</h4>
+                    <p>Anthropic's assistant, known for nuanced responses. Access at <a href="https://claude.ai" target="_blank">claude.ai</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>AI Boardroom - MGMT1003 Guest Lecture</p>
+        <p>Dr. Michael Borck | Curtin Singapore | December 2025</p>
+    </footer>
+</body>
+</html>
